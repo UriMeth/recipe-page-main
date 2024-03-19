@@ -1,0 +1,146 @@
+/*  GENERAL */
+@import "css/reset.css";
+@import "css/variables.css";
+
+/*  UTILS */
+@import "css/utils/layout.utils.css";
+@import "css/utils/spacing.utils.css";
+@import "css/utils/typography.utils.css";
+@import "css/utils/flex-grid.utils.css";
+
+/*  COMPONENTS (UI) */
+@import "css/components/button.component.css";
+@import "css/components/input.component.css";
+@import "css/components/card.component.css";
+@import "css/components/reel.component.css";
+
+/*  Specific to this project */
+
+body {
+  background-color: var(--Neutral-300);
+}
+
+.main {
+  background-color: var(--Neutral-100);
+  margin-inline: auto;
+  margin-block: 0;
+  font-family: var(--Young-Serif);
+  max-width: 375px;
+}
+
+img {
+  width: 100%;
+}
+
+.main__text {
+  padding: 2.2rem;
+  gap: 0.5rem;
+  color: var(--Neutral-600);
+  position: relative;
+}
+
+h1 {
+  color: var(--Neutral-800);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 16px;
+}
+
+.preparation-time  {
+  gap: 1rem;
+  background-color: var(--Neutral-200);
+  border-radius: var(--border-radius);
+  padding:2rem 3rem;
+}
+
+.components {
+  color: var(--Primary-400);
+  font-weight: 600;
+}
+
+.components.title {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+  bottom: 12px;
+  right: 20px;
+  font-size: x-large;
+}
+
+.components.title.unique {
+  color: var(--Primary-600);
+  font-weight: 600;
+  font-size: large;
+  
+}
+
+.j-text {
+  font-size: 14px;
+  padding-left: none;
+  padding-bottom: 0.5rem;
+  position: relative;
+  right: 20px;
+}
+
+.nutition__items div {
+  border-bottom: var(--border-bottom);
+  padding: 1rem;
+}
+
+.nutition__items div:last-child {
+  border-bottom: none;
+}
+
+b, ul, ol { 
+  color: var(--Neutral-600);
+}
+
+.ingredients, .instruction {
+  border-bottom: var(--border-bottom) ;
+  padding-bottom: 2rem;
+}
+
+.preparation-time, p, li {
+  font-family: var(--Outfit);
+}
+
+li::marker {
+  color: var(--Primary-400);
+  font-weight: bold;
+}
+
+li {
+  padding-left: 20px;
+  margin: 0.5rem;
+}
+
+@media (min-width: 376px) {
+
+  body {
+    background-color: var(--Neutral-300);
+  }
+
+  .main {
+  border-radius: var(--border-radius);
+  max-width: 740px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 2.2rem;
+}
+img {
+  border-radius: var(--border-radius);
+}
+
+.main__text {
+  padding: 0;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+}
